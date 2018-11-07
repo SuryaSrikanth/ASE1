@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-trigger').dropdown();
+    })
+  </script>
+  <title>Admin View</title>
+  <style>
+    img {
+      height: 250px;
+    }
+  </style>
+</head>
+
+<body class="grey lighten-2" style="z-index:-1">
+  <br><br>
+  <div>
+    <nav class="nav-wrapper grey lighten-4" style="top:0px; position:fixed;z-index:2;">
+      <div class="container">
+        <a href="" class="brand-logo black-text">ADMIN</a>
+        <a href="" class="dropdown-trigger btn hide-on-large-only" data-target="dropdown1">
+          <i class="material-icons black-text">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#" class="btn-floating"><i class="material-icons blue-text large">person</i></a></li>
+          <li><a href="#">
+              <div class="black-text">About.</div>
+            </a></li>
+          <li><a href="#">
+              <div class="black-text">Contact.</div>
+            </a></li>
+          <li><a href="#" class="btn waves-effect">Login/Logout</a></li>
+        </ul>
+        <div>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#" class="center white"><i class="center material-icons large">person</i></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="grey lighten-1 left">Login/Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <h3>Welcome</h3>
+    <div class="row">
+      <a href="">
+        <div class="">
+          <div class="col s12 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="Admin_View_images/studentplus.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating blue pulse ">
+                  <i class="material-icons ">person_add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="center">
+                  <h5 class="">Add Student</h5>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="col s12 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="Admin_View_images/teacherplus.jpg" alt="">
+              <a href="" class="halfway-fab btn-floating blue darken-1 pulse ">
+                <i class="material-icons ">person_add</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p class="center">
+                <h5 class="">Add Teacher</h5>
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="col s12 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="Admin_View_images/profiles.png" alt="">
+              <a href="" class="halfway-fab btn-floating blue darken-1 pulse ">
+                <i class="material-icons ">format_align_center</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p class="center">
+                <h5 class="">View profiles</h5>
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="col s12 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="Admin_View_images/results.jpg" alt="">
+              <a href="" class="halfway-fab btn-floating blue darken-1 pulse ">
+                <i class="material-icons ">format_align_center</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p class="center">
+                <h5 class=""> Final Grades</h5>
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
