@@ -6,14 +6,13 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
-    name = User.objects.all()
+    name = Name.objects.all()
     comment = Comment.objects.all()
 
+    mylist = zip(name,comment)
     context = {
-        'name': name,
-        'comment': comment
+        'mylist' : mylist,
     }
-
     return render(request,'forum/index.html', context)
 
 
