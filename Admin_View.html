@@ -8,48 +8,90 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.dropdown-trigger').dropdown();
-    })
+      $('.sidenav').sidenav();
+    });
+   
   </script>
   <title>Admin View</title>
   <style>
     img {
       height: 250px;
     }
+
+        header, main, footer {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
   </style>
 </head>
 
-<body class="grey lighten-2" style="z-index:-1">
-  <br><br>
-  <div>
-    <nav class="nav-wrapper grey lighten-4" style="top:0px; position:fixed;z-index:2;">
-      <div class="container">
-        <a href="" class="brand-logo black-text">ADMIN</a>
-        <a href="" class="dropdown-trigger btn hide-on-large-only" data-target="dropdown1">
-          <i class="material-icons black-text">menu</i>
-        </a>
+<body class="grey lighten-2">
+  
+   <div class="navbar-fixed">
+    <nav class="grey lighten-4">
+      <div class="nav-wrapper container">
 
+          
+        <a href="#" class="brand-logo black-text">Admin</a>
+
+       
         <ul class="right hide-on-med-and-down">
-          <li><a href="#" class="btn-floating"><i class="material-icons blue-text large">person</i></a></li>
+          <li><a href="#" class="btn-floating"><i class="white material-icons black-text large">person</i></a></li>
           <li><a href="#">
               <div class="black-text">About</div>
             </a></li>
           <li><a href="#">
               <div class="black-text">Contact</div>
             </a></li>
-          <li><a href="#" class="btn waves-effect">Login/Logout</a></li>
+          <li><a href="#" class="white black-text btn waves-effect">Logout</a></li>
         </ul>
-        <div>
-          <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#" class="center white"><i class="center material-icons large">person</i></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" class="grey lighten-1 left">Login/Logout</a></li>
-          </ul>
+
+      </div></nav> 
+
+
+
+    <!--    
+
+      <ul id='slide-out' class='sidenav'>
+        <li><a href="#" class="center white"><i class="center material-icons large">person</i></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="grey lighten-1 left">Logout</a></li>
+      </ul>
+    <a href="#"  data-target="slide-out" class="sidenav-trigger">
+      <i class="material-icons black-text">menu</i>
+    </a>
+
+-->
+
+</div>
+<div class="show-on-small">
+<div class="btn white">
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
         </div>
-      </div>
-    </nav>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="black-text sidenav-trigger"><i class="material-icons">menu</i></a>
+   
   </div>
+</div>
+
   <div class="container">
     <h3>Welcome</h3>
     <div class="row">
@@ -124,12 +166,7 @@
           </div>
         </div>
       </a>
-
     </div>
   </div>
-
-
-
 </body>
-
 </html>
